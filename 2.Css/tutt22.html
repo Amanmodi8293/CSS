@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css Variable / Custom Properties</title>
+    <style>
+        :root{
+
+            --primary-color: rgb(81, 255, 0);
+            --secondary-color: rgb(89, 5, 157);
+            --maxwh:200px;
+        }
+        .box{
+            background-color: var(--primary-color);
+            box-shadow: 5px 5px 5px var(--primary-color);
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin:5px;
+        }
+        .container{
+            max-width: var(--maxwh);
+            background-color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

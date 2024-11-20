@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title> Flexbox Tutorial </title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 5px solid black;
+            display: flex;
+            /* flex-direction: column;
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row-reverse wrap; */
+            /* flex-flow: row-reverse wrap-reverse; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: center; */
+            /* align-items: stretch; */
+        }
+        .item{
+            border: 2px solid tomato;
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        #item1{
+            /* order: 5; */
+            /* flex-grow: 3; */
+            /* flex-shrink: 10; */
+        }
+        #item2{
+            /* order: 1; */
+            /* flex-shrink: 3; */
+            /* when flex-direction is set to row flex basis: will control width */
+            /* when flex-direction is set to column flex basis: will control height */
+            /* flex-basis: 500px; */
+        }
+        #item3{
+            /* order: 3; */
+            /* flex-grow: 3; */
+            /* flex: flex grow flex shrink flex basis */
+            flex: 2 2 100px;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox Tutorial</h1> 
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors & more designing</title>
+    <style>
+        #container{
+            border:20px double rgb(255, 255, 255);
+            background-color:rgb(253, 228, 7);
+            margin:50px;
+            padding-left:40px;
+            padding-right:50px;
+            width:750px;
+        }
+        #read{
+            font-size: 17px;
+        }
+        .btn{
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            border: 2px solid rgb(244, 244, 244);
+            padding: 6px;
+            margin-left:190px ;
+            margin-bottom:10px ;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 8px;
+        }
+        a{
+            text-decoration:dotted;
+            color: blueviolet;
+        }
+        a:hover{
+            color: rgb(0, 0, 0);
+            background-color: white;
+            border:2px solid black;
+        }
+        /* a:visited{
+            color: rgb(255, 8, 8);
+            background-color: rgb(0, 0, 0);
+        } */
+        a:active{
+            background-color: rgb(0, 253, 253);
+            color: rgb(253, 89, 0);
+            border: 5px double rgb(253, 89, 0);
+        }
+        button{
+            text-decoration:dotted;
+            color: blueviolet;
+        }
+        button:hover{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 254, 254);
+            border: 2px solid black;
+        }
+         /* button:visited{
+            color: rgb(255, 8, 8);
+            background-color: rgb(0, 0, 0);
+        } */
+        
+        button:active{
+            background-color: rgb(0, 253, 253);
+            color: rgb(253, 89, 0);
+            border: 5px double rgb(253, 89, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="cont1">
+        <h2>This is my heading</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum culpa doloremque quia, fuga modi, placeat maxime, esse distinctio qui reiciendis reprehenderit eveniet dolorem. Saepe laboriosam quasi beatae pariatur! In, qui!</p>
+        <a href="https://google.com" target="_blank" class="btn" id="read">read more</a>
+        <button class="btn" id="contact">contact us</button>
+    </div>
+</body>
+</html> 

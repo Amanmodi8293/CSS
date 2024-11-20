@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid + Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap:1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        @media only screen and (max-width:375px) {
+            body{
+                background-color: blue;
+            }
+            .container{
+            display: grid;
+            grid-gap:1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+            #aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+
+            }
+        }
+        @media only screen and (min-width:375px) and ( max-width:768px) {
+            body{
+                background-color: rgb(190, 163, 163);
+            }
+            .container{
+            display: grid;
+            grid-gap:1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+            #aside{
+                display: none;
+            }
+            
+        }
+        @media only screen and (min-width:768px) and (max-width:1200px) {
+            body{
+                background-color: coral;
+            }
+            .container{
+            display: grid;
+            grid-gap:1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+            
+        }
+        @media only screen and (min-width:1200px) {
+            body{
+                background-color: aqua;
+            }
+            
+        }
+        .boder-now{
+            border: 2px solid black;
+            background-color: brown;
+            padding:25px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar" class="boder-now">
+            <span> Home</span>
+            <span>About</span>
+            <span>Contact Us</span> 
+        </nav>
+        <section id="section" class="boder-now">
+            <h1>Learn Css in Hindi</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, ab. Eius dolorum voluptatibus minima quod iusto mollitia modi amet alias deserunt debitis quaerat odio dolore voluptas libero, et enim hic earum! Obcaecati, expedita hic! Aspernatur facere magnam numquam, ullam temporibus recusandae, quod expedita natus odit eligendi ipsum nostrum veritatis consequatur at iure quae suscipit. Provident ipsa nulla quos illum vitae sint voluptatibus veniam veritatis. Nostrum explicabo harum incidunt distinctio doloremque ullam soluta dignissimos alias perferendis itaque ipsum corrupti, vitae ex doloribus ipsam at, labore obcaecati, eveniet pariatur officiis ipsa dolore assumenda. Officiis nostrum ducimus asperiores soluta dolorum iure, rem atque nam. Dolor numquam ex voluptatibus fuga. Fuga assumenda molestias possimus ullam vero consequuntur eius cumque. Facere rerum beatae tempore veniam hic quis mollitia aspernatur consequuntur molestias vel, deserunt pariatur doloremque molestiae ducimus. Praesentium, doloribus cupiditate. Tempora ducimus vero consequuntur ad nostrum cumque soluta, repellat est placeat, maxime officiis. Provident enim fugiat odit eveniet voluptate excepturi ratione velit, delectus harum incidunt vitae tempore fuga! Possimus expedita laudantium provident atque error necessitatibus, facilis quidem! Suscipit recusandae culpa natus reprehenderit fuga beatae unde vitae at maxime! Id rerum exercitationem similique ducimus mollitia. Consequuntur maiores reiciendis sunt velit fuga, explicabo at consectetur ipsum atque nam eveniet delectus exercitationem illum dolore aliquam maxime cupiditate! Tempore, facilis autem! Minus vero corporis beatae omnis culpa. Eveniet inventore velit, necessitatibus natus officia eius odit soluta provident delectus voluptates ullam commodi, ex saepe! Omnis quo rem corrupti fugiat. Eaque nulla exercitationem repellendus assumenda, totam facilis placeat error necessitatibus officia dolores et doloribus culpa veritatis voluptates accusamus, nisi quaerat labore iusto ullam natus minima quo est adipisci aperiam. Maiores vitae id repudiandae sapiente nostrum, ut cum consectetur eaque recusandae esse alias iusto natus odit aliquam. Minima doloribus quisquam iste laudantium cumque cum? Nesciunt dolorum soluta blanditiis ad. Atque non optio praesentium labore culpa a impedit deserunt ratione quae sunt dolorem, obcaecati vero nam porro consequatur autem nostrum tempora! Quibusdam, recusandae dolores eius natus neque a quam consequatur iure et voluptatibus, obcaecati non alias perferendis perspiciatis nisi aliquam vero, rem reiciendis doloremque corrupti officia aut repellat? Ex quaerat dolore nisi sed ipsam quasi neque, rerum perspiciatis? Est sequi iure ducimus eveniet doloremque, debitis culpa tempora ea libero sed, dolores tempore quos ex eaque quaerat voluptatem voluptas quibusdam voluptates iusto minus, modi iste explicabo odio. Iusto illum veniam pariatur ipsam nemo deserunt sint commodi quibusdam assumenda eum! Asperiores sapiente numquam odio aspernatur.
+        </section>
+        <aside id="aside" class="boder-now">MOre about us</aside>
+        <footer id="footer" class="boder-now">copy right aman modi 2023</footer>
+    </div>
+</body>
+</html>

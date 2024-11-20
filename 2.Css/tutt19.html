@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selector</title>
+    <style>
+        .container{
+            display: block;
+            margin: auto;
+            width: 233px;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            background-color: rgba(137, 43, 226, 0.649);
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            color: aliceblue;
+            text-emphasis-color: rgb(0, 0, 0);
+        }
+        input[type="email"]{
+            background-color: rgba(0, 204, 255, 0.649);
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            color: aliceblue;
+            text-emphasis-color: rgb(0, 0, 0);
+        }
+        a[target]{
+            background-color: rgb(255, 140, 0);
+            text-decoration: none;
+            border: 2px solid black;
+            margin-left: 10px;
+        }
+        a[target="-self"]{
+            background-color: rgb(55, 255, 0);
+            text-decoration: none;
+            border: 2px solid black;
+            margin-left: -10px;
+        }
+        li:nth-child(3){
+            color: rgb(3, 228, 10);
+        }
+        li:nth-child(2n+0){
+            color: blueviolet;
+        }
+        li:nth-child(odd){
+            background-color: rgb(255, 60, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go To Google</a></h1>
+        <h1><a href="http://Facebook.com" target="-self">Go To Facebook</a></h1>
+        <form action="" class="form-controll">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your Email">
+            <input type="password" placeholder="Enter your name">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item-1</li>
+            <li class="item" id="item2">item-2</li>
+            <li class="item" id="item3">item-3</li>
+            <li class="item" id="item4">item-4</li>
+            <li class="item" id="item5">item-5</li>
+            <li class="item" id="item6">item-6</li>
+            <li class="item" id="item7">item-7</li>
+            <li class="item" id="item8">item-8</li>
+            <li class="item" id="item9">item-9</li>
+            <li class="item" id="item10">item-10</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgba(165, 18, 195, 0.747);
+        }
+        .container{
+            background-color: cornflowerblue;
+            border: 5px dotted rgb(255, 255, 255);
+            /* padding-top: 10px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            padding-left: 60px; */
+            padding: 10px 50px 10px 60px;
+            /* padding: 10px 60px;  padding: x(top/bottom) y(right/left) */
+            /* margin-top: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            margin-left: 60px; */
+            margin: 50px 50px 50px 70px;
+            /* margin: 10px 60px;  margin: x(top/bottom) y(right/left) */
+            border-radius: 10px;
+            width:400px;
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+    <h2>This is my heading</h2>
+    <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae reprehenderit praesentium facere, dolorum ab, sapiente ullam libero voluptatibus deserunt id beatae soluta magnam voluptatum eum voluptate vel ex ut.</p>  
+</div>    
+<div class="container">
+    <h2>This is my heading</h2>
+ <p id="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae reprehenderit praesentium facere, dolorum ab, sapiente ullam libero voluptatibus deserunt id beatae soluta magnam voluptatum eum voluptate vel ex ut.</p>   
+</div>
+<div class="container">
+    <h2>This is my heading</h2>
+    <p id="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae reprehenderit praesentium facere, dolorum ab, sapiente ullam libero voluptatibus deserunt id beatae soluta magnam voluptatum eum voluptate vel ex ut.</p>   
+</div>
+</body>
+</html>

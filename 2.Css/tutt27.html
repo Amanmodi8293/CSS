@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: 1fr 2fr 15fr;
+            /* grid-template-rows: 1fr 2fr 5fr 15fr; */
+            /* grid-template-rows: 1fr 2fr 3fr 5fr 15fr; */
+            grid-auto-rows: 3fr;
+            grid-template-columns: 2fr 4fr;
+            /* grid-template-columns: repeat(5,2fr); */
+            /* grid-template-columns: 2fr 4fr 6fr; */
+            /* grid-template-columns: 2fr 4fr 6fr 8fr; */
+            /* grid-template-columns: 2fr 4fr 6fr 8fr 10fr; */
+            grid-gap: 1rem;
+        }
+        .item{
+            background-color: aqua;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is a box-1</div>
+        <div class="item">This is a box-2</div>
+        <div class="item">This is a box-3</div>
+        <div class="item">This is a box-4</div>
+        <div class="item">This is a box-5</div>
+        <div class="item">This is a box-6</div>
+        <div class="item">This is a box-7</div>
+        <div class="item">This is a box-8</div>
+        <div class="item">This is a box-9</div>
+        <div class="item">This is a box-10</div>
+    </div>
+</body>
+</html>

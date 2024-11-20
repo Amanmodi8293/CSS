@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position,absolute relative fixed and sticky</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: coral;
+            height: 10000px;
+        }
+        .box{
+            border: 5px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+        #box3{
+            position: absolute;
+            top:80px;
+            left:30px;
+        }
+        #box2{
+            position: relative;
+            top:30px;
+            left:10px;
+        }
+        #box1{
+            position: sticky;
+            top: 3px;
+        }
+        #box4{
+            position: fixed;
+            right:20px;
+            bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">sticky ye upar hi rhega</div>
+        <div class="box" id="box2">relative ye apni jagah se chalega</div>
+        <div class="box" id="box3">absolute ye container ke hisab se chalega</div>
+        <div class="box" id="box4">fixed ye kahin bhi fix kar sakte hai</div>
+    </div>
+</body>
+</html>
